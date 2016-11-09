@@ -10,7 +10,7 @@ html, body {
 }
 
 p {
-  margin: 10px 0;
+  margin: 10px 10px 10px 10px;
   font-weight: bold;
   transition: margin 0s ease;
 }
@@ -32,4 +32,24 @@ section:hover {
 
 ul {
   list-style: none;
+}
+
+.parrot {
+  display: inline;
+}
+
+.accordion-toggle {
+  margin: 10px 10px 10px 10px;
+  font-size: 25px;
+}
+.accordion-inner {
+  display: none;
+}
+
+#buttonDiv {
+  text-align: center;
+}
+
+#theButton {
+  font-size: 30px;
 }

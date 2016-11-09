@@ -1,44 +1,71 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-400000">
+  <head>
+    <meta charset="UTF-400000">
 
-		<link rel="stylesheet" href="./css/quiz2.css">
+    <link rel="stylesheet" href="./css/quiz2.css">
 
-	</head>
-	<body>
-		<h1>Welcome To The Wonderful World of Debugging Code</h1>
+  </head>
 
-		<section id="mainSection">
-			<p>This is a paragraph, I promise.</p>
+  <body>
+    <h1>Welcome To The Wonderful World of Debugging Code</h1>
 
-			<ul class="links">
-				<li>
-					<a href="#">Link 1</a>
-				</li>
-				<li>
-					<a href="#">Link 2</a>
-				</li>
-				<li>
-					<a href="#">Link 487</a>
-				</li>
-			</ul>
-		</section>
+    <section id="mainSection">
+      <p>This is a paragraph, I promise.</p>
 
+      <ul id="links">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
 
-		<p>I am a lonely paragraph, with no immediate parent.</p>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
 
-		<section id=secondarySection>
-			<p>Woop woop!!!</p>
-			<p>See how elegantly we're spaced out?</p>
-			<p>Yeah, we're spaced out alright.</p>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
 
-			<ol>
-				<li>I'm like an unordered list</li>
-				<li>But I'm more orderly</li>
-				<li>That was a really bad joke.</li>
-			<ol>
-		</section>
+      </ul>
 
-	</body>
+    </section>
+
+    <section>
+      <p>I am not longer a lonely paragraph, with no immediate parent.</p>
+
+      <span class="accordion-toggle">+</span>
+
+      <div class="accordion-inner">
+        <p>I have friends!</p>
+
+      </div>
+
+    </section>
+
+    <section id="secondarySection">
+      <p>Woop woop!!!</p>
+
+      <p>See how elegantly we're spaced out?</p>
+
+      <p>Yeah, we're spaced out alright.</p>
+
+      <ol>
+        <li>I'm like an unordered list</li>
+
+        <li>But I'm more orderly</li>
+
+        <li>That was a really bad joke.</li>
+
+      <ol>
+
+    </section>
+
+    <div id="buttonDiv">
+      <button type="button" id="theButton" onclick="buttonFunction()">Do it. I dare you.</button>
+
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="./js/quiz2.js"></script>
+  </body>
 </hmtl>

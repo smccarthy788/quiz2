@@ -6,10 +6,36 @@
 //  - finally, write a function that makes you happy :D (as in, have some fun a write something cool, it's up to you!)
 
 (function($){
-	$('.links li a').on('click', function(e) {
-		e.preventDefault()
-		alert('you clicked a link, good for you');
+	$('#links li a').on('click', function(e) {
+		e.preventDefault();
+		alert('You clicked a link, good for you.');
 	});
 
-	console.log("this is a message for you!!!")
+	var colors = ["#48cc2a", "#cc2a68", "#1c0bba"]
+
+	$('ol li').each(function(i){
+		$(this).css("background-color", colors[i])
+	});
+
+	$('.accordion-toggle').on('click', function(e){
+		var accordion = $(".accordion-inner")
+		if($(accordion).css("display") === "none"){
+			$(".accordion-inner").css("display", "block");
+		}
+		else {
+			$(".accordion-inner").css("display", "none");
+		}
+	});
+
+	console.log("this is a message for you!!!");
 })(jQuery);
+
+function buttonFunction(){
+	console.log("hit")
+	$('body').html('<div class="goodbye"><h1>Bye! Neat quiz. I had fun.</h1></div>');
+	var interval = setInterval(function(){addParrot();}, 500);
+}
+
+function addParrot(){
+	$('body').append('<div class="parrot"><img src="./img/congaparrot.gif"></img></div>');
+}
